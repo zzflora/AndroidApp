@@ -38,7 +38,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun setupFriendsList() {
-        val friends = arrayOf("张三", "李四", "王五", "赵六", "钱七")
+        val friends = arrayOf("张三", "李四", "王五", "赵六", "钱七","梁八")
         val adapter = ArrayAdapter(
             this,
             android.R.layout.simple_list_item_1,
