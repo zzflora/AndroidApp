@@ -34,8 +34,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/avatar1"
-            android:contentDescription="用户头像"
+            android:src="@drawable/user_avatar"
+            android:contentDescription="userphoto"
             android:layout_marginBottom="16dp" />
 
         <TextView
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:textSize="18sp"
-            android:text="欢迎, 用户名" />
+            android:text="Welcome" />
 
     </LinearLayout>
 

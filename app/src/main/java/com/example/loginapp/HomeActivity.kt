@@ -21,7 +21,7 @@ class HomeActivity : AppCompatActivity() {
 
         // 获取传递的数据
         val username = intent.getStringExtra("username") ?: "用户"
-        val avatarResource = intent.getIntExtra("avatarResource", R.drawable.avatar1)
+        val avatarResource = intent.getIntExtra("avatarResource", R.drawable.user_avatar)
 
         // 显示用户信息
         usernameTextView.text = "欢迎, $username"

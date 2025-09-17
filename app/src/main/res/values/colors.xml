@@ -11,4 +11,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="light_gray">#F5F5F5</color>
+    <color name="spider_red">#E23636</color>
+    <color name="spider_blue">#2B78C5</color>
+    <color name="spider_dark">#1A1A1A</color>
 </resources>
