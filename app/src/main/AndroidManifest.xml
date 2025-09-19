@@ -38,10 +38,15 @@
             android:name=".ConversationListActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".DataVisualizationActivity"
+            android:exported="false" />
+
         <!-- 聊天活动 (设置为 exported=false，只能从应用内部启动) -->
         <activity
             android:name=".ChatActivity"
             android:exported="false" />
+
 
     </application>
 

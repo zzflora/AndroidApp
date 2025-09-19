@@ -44,6 +44,7 @@ dependencies {
     implementation(libs.androidx.appcompat) // 添加 AppCompat
     implementation(libs.androidx.constraintlayout) // 添加 ConstraintLayout
     implementation(libs.google.android.material) // 添加 Material Design
+//    implementation("com.github.PhilJay:MPAndroidChart:3.1.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
