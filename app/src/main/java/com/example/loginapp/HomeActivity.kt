@@ -24,7 +24,7 @@ class HomeActivity : AppCompatActivity() {
         val avatarResource = intent.getIntExtra("avatarResource", R.drawable.user_avatar)
 
         // 显示用户信息
-        usernameTextView.text = "欢迎, $username"
+        usernameTextView.text = "Welcome, $username"
         avatarImageView.setImageResource(avatarResource)
 
         // 设置好友列表

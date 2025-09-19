@@ -4,7 +4,7 @@
     <string name="login_title">用户登录</string>
     <string name="username_hint">请输入用户名</string>
     <string name="password_hint">请输入密码</string>
-    <string name="login_button">登录</string>
+    <string name="login_button">login</string>
     <string name="home_title">用户主页</string>
     <string name="welcome_message">欢迎, %s</string>
     <string name="friends_list">好友列表</string>
