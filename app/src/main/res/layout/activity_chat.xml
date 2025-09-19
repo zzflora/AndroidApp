@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spiderman_background_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 聊天头部 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/spider_dark"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/friendAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/miles" />
+
+            <TextView
+                android:id="@+id/friendName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miles"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/friendAvatar"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp" />
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重置对话"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/spider_red"
+                android:textColor="@android:color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <!-- 消息列表 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messagesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- 回复选项 -->
+        <LinearLayout
+            android:id="@+id/replyOptionsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/spider_dark"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/replyOption1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="回复选项1"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/spider_blue"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/replyOption2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="回复选项2"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/spider_blue"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/replyOption3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="回复选项3"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/spider_blue"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <!-- 输入框 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/spider_dark"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="输入消息..."
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:background="@drawable/edit_text_bg" />
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/spider_red"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

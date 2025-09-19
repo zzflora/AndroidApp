@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- 对方消息 -->
+    <LinearLayout
+        android:id="@+id/friendMessageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/friendAvatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/miles" />
+
+        <TextView
+            android:id="@+id/friendMessageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/friend_message_bg"
+            android:text="这是对方的消息"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginLeft="8dp" />
+
+    </LinearLayout>
+
+    <!-- 用户消息 -->
+    <LinearLayout
+        android:id="@+id/userMessageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/userMessageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_message_bg"
+            android:text="这是用户的消息"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginRight="8dp" />
+
+        <ImageView
+            android:id="@+id/userAvatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user_avatar" />
+
+    </LinearLayout>
+
+</LinearLayout>
